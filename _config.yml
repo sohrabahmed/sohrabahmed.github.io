@@ -28,8 +28,8 @@ baseurl: ""
 
 # List of links in the navigation bar
 navbar-links:
-  Big Data: "bigdata"
   About Me: "aboutme"
+  Blog: "blog"
   Resume: "resume/MD_Sohrab_Ahmed.pdf"
 #  Tags: "tags"
 
