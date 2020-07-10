@@ -2,7 +2,7 @@
 layout: page
 title: About Sohrab Ahmed
 only-about-me: About me
-subtitle: "For a start, my favorite quote is, <br> Data is the new water, must should be clean and healthy before consuming."
+subtitle: "For a start, my favorite quote is, <br> Data is new water, must should be clean and healthy before consuming."
 ---
 
 <div id="aboutme-section">
