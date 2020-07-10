@@ -29,7 +29,7 @@ baseurl: ""
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Blog: "blog"
+#  Blog: "blog"
   Resume: "resume/MD_Sohrab_Ahmed.pdf"
 #  Tags: "tags"
 
