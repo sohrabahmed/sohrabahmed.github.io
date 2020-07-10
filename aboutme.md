@@ -9,7 +9,7 @@ subtitle: "For a start, my favorite quote is, <br> Data is new water, must shoul
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi, my name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast and developer living in Subang Jaya, Malaysia.
+  Hi, my name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast and Big data Specialist living in Subang Jaya, Malaysia.
 </p>
 
 <p class="about-text">
@@ -19,7 +19,8 @@ I am Azure Certified Cloud Developer and Deltalake Consultant who loves to trans
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I obtained my <strong>Bachelor of Technology</strong> degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.<br>I am currently pursuing a <strong>Master of Science in Machine Learning and Artificial Inteligence</strong> degree from Liverpool John Moores University, United Kingdom.
+I obtained my <strong>Bachelor of Technology</strong> degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
+<br>I am currently pursuing <strong>Master of Science in Machine Learning and Artificial Inteligence</strong> from Liverpool John Moores University, United Kingdom.
 </p>
 
 <center>
