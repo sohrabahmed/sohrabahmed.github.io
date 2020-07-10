@@ -2,7 +2,7 @@
 layout: page
 title: About Sohrab Ahmed
 only-about-me: About me
-subtitle: "For a start, my favorite quote is, <br> Do what you love, love what you do."
+subtitle: "For a start, my favorite quote is, <br> Data is the new water, must should be cleaned and healthy before consuming."
 ---
 
 <div id="aboutme-section">
