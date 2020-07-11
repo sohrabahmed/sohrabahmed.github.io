@@ -19,7 +19,7 @@ I am Azure Certified Cloud Developer and Deltalake Consultant who loves to trans
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I obtained my <strong>Bachelor of Technology</strong> degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
+Obtained my Bachelor of Technology degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
 <br>I am currently pursuing <strong>Master of Science in Machine Learning and Artificial Inteligence</strong> from Liverpool John Moores University, United Kingdom.
 </p>
 
