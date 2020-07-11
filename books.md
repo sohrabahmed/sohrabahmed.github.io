@@ -1,6 +1,6 @@
 ---
 layout: books
-title: Anudit Verma - My Book Recommendations
+title: Sohrab Ahmed - My Book Recommendations
 ---
 <head>
 	<link rel="stylesheet" type="text/css" href="css/book_style.css" />
@@ -165,6 +165,6 @@ title: Anudit Verma - My Book Recommendations
 			</div>			
 		</section>
 		<center>
-			<h3>Bookworm eh? Follow me on <a href="https://www.goodreads.com/anuditverma"><img src="goodreads_logo.png" /></a></h3>
+			<h3>Bookworm eh? Follow me on <a href="https://www.goodreads.com/void_io"><img src="goodreads_logo.png" /></a></h3>
 		</center>
 	</div>
