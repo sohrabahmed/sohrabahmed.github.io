@@ -14,7 +14,7 @@ subtitle: "For a start, my favorite quote is, <br> Data is new water, must shoul
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I am Azure Certified Cloud Developer and Deltalake Consultant who loves to transform raw data into information and information into insight.
+I am Microsoft Certified Data Engineer, Azure Cloud Developer and Deltalake SME and Microsoft Certified Trainer who loves to transform raw data into information and information into insight.
 </p>
 
 <p class="about-text">
