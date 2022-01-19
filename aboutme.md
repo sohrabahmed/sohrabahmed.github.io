@@ -20,7 +20,7 @@ I am Microsoft Certified Data Engineer, Azure Cloud Developer and Deltalake SME 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
 I obtained my Bachelor of Technology degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
-<br>I am currently pursuing <strong>Master of Science in Machine Learning & Artificial Inteligence</strong> from Liverpool John Moores University, United Kingdom.
+<br>I am currently pursuing <strong>Master of Technology in Computing Systems & Infrastructure </strong> from BITS Pilani, India.
 </p>
 
 <center>
