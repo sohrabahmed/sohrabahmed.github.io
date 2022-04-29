@@ -9,7 +9,7 @@ subtitle: "For a start, my favorite quote is, <br> Data is new water, must shoul
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi, my name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast and Big data Specialist living in Subang Jaya, Malaysia.
+  Hi, My name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast living in Subang Jaya, Malaysia.
 </p>
 
 <p class="about-text">
