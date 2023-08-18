@@ -9,7 +9,7 @@ subtitle: "For a start, my favorite quote is, <br> Data is new water, must shoul
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi, My name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast living in City of Gems, Hyderabad.
+  Hi, My name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast living in City of Pearls, Hyderabad.
 </p>
 
 <p class="about-text">
