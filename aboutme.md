@@ -19,11 +19,12 @@ I am Microsoft Certified Data Engineer, Azure Cloud Developer and Data Analyst a
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I obtained my Bachelor of Technology degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
-<br>I am currently pursuing <strong>Master of Technology in Computing Systems & Infrastructure </strong> from BITS Pilani, India.
+<br>I have completed my <strong>Master of Technology in Computing Systems & Infrastructure </strong> from BITS Pilani, India.
+<br>I obtained my Bachelor of Technology degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
+
 </p>
 
 <center>
-	<a href="https://twitter.com/void_io" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @void_io</a>
+	<a href="https://x.com/void_io" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @void_io</a>
 	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
