@@ -14,7 +14,7 @@ subtitle: "For a start, my favorite quote is, <br> Data is new water, must shoul
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I am a Microsoft Certified Data Engineer, Azure Cloud Developer, and Data Analyst, as well as a Deltalake SME and Microsoft Certified Trainer. I’ve recently expanded my expertise to include the AWS data engineering stack, and I love transforming raw data into information and information into insight.
+  I specialize in driving high-priority business initiatives using AWS, Azure Cloud, Cloudera, Snowflake, and Databricks platforms. With a passion for transforming raw data into powerful insights, I leverage cutting-edge technologies to build scalable data ingestion pipelines, modern data warehouses, and Delta Lake ecosystems. My expertise spans Big Data platforms (Hadoop, Databricks), AWS tools (S3, MSK, EC2), and Azure products (Data Factory, Synapse, ADLS Gen2).
 </p>
 
 <p class="about-text">
