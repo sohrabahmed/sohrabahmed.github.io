@@ -1,3 +1,4 @@
+---
 layout: page
 title: About Sohrab Ahmed
 only-about-me: About me
@@ -8,7 +9,7 @@ subtitle: "For a start, my favorite quote is, <br> Data is new water, must shoul
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi, My name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast now living in Kuala Lumpur, a vibrant city where modernity meets tradition.
+  Hi, My name is <strong>Sohrab Ahmed</strong>, I am an avid datum enthusiast living in Kuala Lumpur.
 </p>
 
 <p class="about-text">
@@ -20,6 +21,7 @@ I am a Microsoft Certified Data Engineer, Azure Cloud Developer, and Data Analys
 <span class="fa fa-graduation-cap about-icon"></span>
 <br>I have completed my <strong>Master of Technology in Computing Systems & Infrastructure </strong> from BITS Pilani, India.
 <br>I obtained my Bachelor of Technology degree in Computer Science & Engineering from ITS Engineering College in Greater Noida, India.
+
 </p>
 
 <center>
@@ -27,4 +29,3 @@ I am a Microsoft Certified Data Engineer, Azure Cloud Developer, and Data Analys
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
 
-</div>
