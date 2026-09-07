@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sohrab Ahmed — Databricks Lakehouse & Delta Lake</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="logo">sohrab@data</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#impact">Impact</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <a href="resume_md_sohrab_ahmed.pdf" class="btn-resume" target="_blank">Resume</a>
+      <button id="theme-btn" title="Toggle theme">☾</button>
+      <button id="cmd-btn" title="Command Palette (Ctrl+K)">⌘K</button>
+    </div>
+  </header>
+
+  <!-- Hero / Interactive Terminal -->
+  <section class="hero">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="title">sohrab@data — zsh</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div id="terminal-output"></div>
+        <div class="input-line">
+          <span class="prompt">sohrab@data:~$</span>
+          <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2><span class="hash">#</span> about</h2>
+    <div class="content">
+      <p>I design and build scalable data platforms, real-time pipelines, and modern lakehouse architectures across AWS, Azure, Cloudera, and Databricks.</p>
+      <p>My work focuses on <strong>Databricks Lakehouse</strong>, <strong>Delta Lake</strong>, high-throughput streaming (Kafka + Flink), data quality, governance, cost optimization, and enabling engineering teams through reusable frameworks and clear platform standards.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2><span class="hash">#</span> skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Lakehouse & Platforms</h3>
+        <div class="tags">
+          <span>Databricks</span><span>Unity Catalog</span><span>DQX</span><span>Genie</span>
+          <span>Delta Lake</span><span>Apache Spark</span><span>Snowflake</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Real-time & Streaming</h3>
+        <div class="tags">
+          <span>Apache Kafka</span><span>AWS MSK</span><span>Apache Flink</span>
+          <span>Spark Structured Streaming</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud & Storage</h3>
+        <div class="tags">
+          <span>AWS</span><span>Azure</span><span>S3</span><span>Redshift</span>
+          <span>Synapse</span><span>ADF</span><span>Data Factory</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Languages & Engineering</h3>
+        <div class="tags">
+          <span>Python</span><span>SQL</span><span>Scala</span><span>PySpark</span>
+          <span>CI/CD</span><span>Airflow</span><span>DevOps</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Quality, Governance & Leadership</h3>
+        <div class="tags">
+          <span>Data Quality</span><span>Lineage</span><span>Metadata Frameworks</span>
+          <span>FinOps</span><span>Mentoring</span><span>SAFe Agile</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Other Tools</h3>
+        <div class="tags">
+          <span>Power BI</span><span>Braze</span><span>Claude Code</span>
+          <span>Hive</span><span>Hadoop</span><span>Cloudera</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2><span class="hash">#</span> experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>SEEK · Kuala Lumpur</h3>
+        <span class="date">Dec 2024 – Present</span>
+      </div>
+      <ul>
+        <li>Architected high-throughput real-time platform using Apache Flink, Kafka (MSK) and Databricks — reduced latency from hours to sub-minute</li>
+        <li>Built AI-driven workflows with Claude Code to automate ETL, DQX checks and deployments with closed-loop Git PRs</li>
+        <li>Engineered centralized data quality & observability framework using Databricks DQX</li>
+        <li>Enabled self-service analytics via Databricks Genie (AI semantic layer)</li>
+        <li>Onboarded 5+ engineering squads to Databricks Lakehouse and accelerated feature delivery by ~20%</li>
+        <li>Led FinOps initiatives (S3 lifecycle policies + cluster optimization)</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>FedEx · Hyderabad</h3>
+        <span class="date">Aug 2023 – Dec 2024</span>
+      </div>
+      <ul>
+        <li>Built metadata-driven ABC (Audit, Balance, Control) framework improving data quality and reliability</li>
+        <li>Led re-architecture of MARS platform using Azure Databricks + Unity Catalog</li>
+        <li>Migrated SAS Enterprise APAC reporting to Synapse serverless — ~30% cost reduction for 500+ users</li>
+        <li>Implemented data lineage, governance policies and CI/CD standards</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>PPG Industries · Malaysia</h3>
+        <span class="date">Nov 2019 – Nov 2022</span>
+      </div>
+      <ul>
+        <li>Built scalable Delta Lake platform supporting ACID transactions, schema evolution, time travel and SCD Type 1/2</li>
+        <li>Reduced data defects by 84% through proactive quality rules and monitoring</li>
+        <li>Developed metadata-driven ingestion pipelines across Azure and Snowflake</li>
+        <li>Implemented CI/CD for Databricks and ADF — reduced manual effort by 90%</li>
+      </ul>
+    </div>
+
+    <div class="job muted-job">
+      <div class="job-header">
+        <h3>Earlier Roles</h3>
+        <span class="date">2015 – 2019</span>
+      </div>
+      <p>Neustar · Sphota · Cognizant (American Express client) — focused on Spark, Hive, Hadoop, data quality frameworks, large-scale ETL and risk analytics.</p>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section id="impact" class="section">
+    <h2><span class="hash">#</span> impact</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Real-time Data Platform</h3>
+        <p class="meta">Flink · Kafka · Databricks</p>
+        <p>Designed a high-throughput streaming platform that reduced critical data latency from hours to sub-minute for business decision-making.</p>
+      </div>
+      <div class="card">
+        <h3>AI-Driven Automation</h3>
+        <p class="meta">Claude Code · DQX · Git PRs</p>
+        <p>Closed-loop system that automates ETL, quality checks and creates pull requests — significantly improving engineering velocity.</p>
+      </div>
+      <div class="card">
+        <h3>Delta Lake Platform</h3>
+        <p class="meta">Delta Lake · Azure Databricks</p>
+        <p>Production lakehouse with ACID, time travel and SCD support. Delivered 84% reduction in data defects.</p>
+      </div>
+      <div class="card">
+        <h3>Platform Enablement</h3>
+        <p class="meta">Unity Catalog · Standards · Mentoring</p>
+        <p>Onboarded 5+ squads to Databricks Lakehouse and improved feature delivery speed by approximately 20%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2><span class="hash">#</span> education</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>M.Tech – Computing Systems and Infrastructure</h3>
+        <p class="meta">BITS Pilani, India · 2023</p>
+      </div>
+      <div class="edu-card">
+        <h3>B.Tech – Computer Science and Engineering</h3>
+        <p class="meta">Uttar Pradesh Technical University, India · 2014</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section">
+    <h2><span class="hash">#</span> certifications</h2>
+    <div class="certs">
+      <span>Databricks Certified Data Engineer Professional</span>
+      <span>Databricks Certified Platform Architect</span>
+      <span>Microsoft Azure Data Engineer</span>
+      <span>Microsoft Azure Developer</span>
+      <span>Power BI Data Analyst</span>
+      <span>Azure Fundamentals</span>
+      <span>Cloudera CCA Spark and Hadoop Developer</span>
+      <span>SAFe 6 Practitioner</span>
+      <span>Microsoft Certified Trainer (MCT)</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2><span class="hash">#</span> contact</h2>
+    <div class="contact-box">
+      <p>📍 Kuala Lumpur, Malaysia</p>
+      <p>📧 <a href="mailto:sohrabahmed@outlook.com">sohrabahmed@outlook.com</a></p>
+      <p>📱 +60 111 262 5189</p>
+      <p>🔗 <a href="https://linkedin.com/in/sohrabahmed" target="_blank">linkedin.com/in/sohrabahmed</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>sohrab@data · Built with care</p>
+  </footer>
+
+  <!-- Command Palette -->
+  <div id="cmd-palette" class="hidden">
+    <div class="cmd-box">
+      <input type="text" id="cmd-input" placeholder="Type a command or search..." autocomplete="off" />
+      <div id="cmd-results"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
