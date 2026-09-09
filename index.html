@@ -4,10 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sohrab Ahmed — Databricks Lakehouse & Delta Lake</title>
+  <meta name="description" content="Sohrab Ahmed — Data Engineering Advisor specializing in Databricks Lakehouse, Delta Lake, real-time platforms with Kafka & Flink.">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230c0c0c'/><text y='.78em' x='50%' text-anchor='middle' font-size='70' font-family='monospace' fill='%2300ff9d'>$</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
   <!-- Top Bar -->
   <header class="topbar">
     <div class="logo">sohrab@data</div>
@@ -16,6 +22,7 @@
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#impact">Impact</a>
+      <a href="#architecture">Architecture</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -23,11 +30,31 @@
       <a href="resume_md_sohrab_ahmed.pdf" class="btn-resume" target="_blank">Resume</a>
       <button id="theme-btn" title="Toggle theme">☾</button>
       <button id="cmd-btn" title="Command Palette (Ctrl+K)">⌘K</button>
+      <button id="menu-btn" class="mobile-only" title="Menu">☰</button>
     </div>
   </header>
 
-  <!-- Hero / Interactive Terminal -->
+  <!-- Mobile Nav -->
+  <div id="mobile-nav" class="hidden">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#impact">Impact</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero -->
   <section class="hero">
+    <div class="status-bar">
+      <span class="pulse"></span>
+      <span id="live-status">Currently shipping · Real-time platform at SEEK</span>
+    </div>
+
+    <!-- Particle canvas -->
+    <canvas id="particles"></canvas>
+
     <div class="terminal-window">
       <div class="terminal-header">
         <span class="dot red"></span>
@@ -40,22 +67,24 @@
         <div class="input-line">
           <span class="prompt">sohrab@data:~$</span>
           <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" />
+          <span class="cursor">▋</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <h2><span class="hash">#</span> about</h2>
     <div class="content">
-      <p>I design and build scalable data platforms, real-time pipelines, and modern lakehouse architectures across AWS, Azure, Cloudera, and Databricks.</p>
+      <p>I design and build <strong>scalable data platforms</strong>, real-time pipelines, and modern lakehouse architectures across AWS, Azure, Cloudera, and Databricks.</p>
       <p>My work focuses on <strong>Databricks Lakehouse</strong>, <strong>Delta Lake</strong>, high-throughput streaming (Kafka + Flink), data quality, governance, cost optimization, and enabling engineering teams through reusable frameworks and clear platform standards.</p>
+      <p class="fun-fact">💡 Fun fact: I still get excited when a pipeline goes from “hours” to “sub-minute”.</p>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="section">
+  <section id="skills" class="section reveal">
     <h2><span class="hash">#</span> skills</h2>
     <div class="skills-grid">
       <div class="skill-group">
@@ -104,7 +133,7 @@
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="section">
+  <section id="experience" class="section reveal">
     <h2><span class="hash">#</span> experience</h2>
 
     <div class="job">
@@ -113,7 +142,7 @@
         <span class="date">Dec 2024 – Present</span>
       </div>
       <ul>
-        <li>Architected high-throughput real-time platform using Apache Flink, Kafka (MSK) and Databricks — reduced latency from hours to sub-minute</li>
+        <li>Architected high-throughput real-time platform using Apache Flink, Kafka (MSK) and Databricks — reduced latency from hours to <strong>sub-minute</strong></li>
         <li>Built AI-driven workflows with Claude Code to automate ETL, DQX checks and deployments with closed-loop Git PRs</li>
         <li>Engineered centralized data quality & observability framework using Databricks DQX</li>
         <li>Enabled self-service analytics via Databricks Genie (AI semantic layer)</li>
@@ -142,7 +171,7 @@
       </div>
       <ul>
         <li>Built scalable Delta Lake platform supporting ACID transactions, schema evolution, time travel and SCD Type 1/2</li>
-        <li>Reduced data defects by 84% through proactive quality rules and monitoring</li>
+        <li>Reduced data defects by <strong>84%</strong> through proactive quality rules and monitoring</li>
         <li>Developed metadata-driven ingestion pipelines across Azure and Snowflake</li>
         <li>Implemented CI/CD for Databricks and ADF — reduced manual effort by 90%</li>
       </ul>
@@ -158,25 +187,29 @@
   </section>
 
   <!-- Impact -->
-  <section id="impact" class="section">
+  <section id="impact" class="section reveal">
     <h2><span class="hash">#</span> impact</h2>
     <div class="cards">
       <div class="card">
+        <div class="metric">sub-minute</div>
         <h3>Real-time Data Platform</h3>
         <p class="meta">Flink · Kafka · Databricks</p>
         <p>Designed a high-throughput streaming platform that reduced critical data latency from hours to sub-minute for business decision-making.</p>
       </div>
       <div class="card">
+        <div class="metric">AI + Git</div>
         <h3>AI-Driven Automation</h3>
         <p class="meta">Claude Code · DQX · Git PRs</p>
         <p>Closed-loop system that automates ETL, quality checks and creates pull requests — significantly improving engineering velocity.</p>
       </div>
       <div class="card">
+        <div class="metric">84%</div>
         <h3>Delta Lake Platform</h3>
         <p class="meta">Delta Lake · Azure Databricks</p>
         <p>Production lakehouse with ACID, time travel and SCD support. Delivered 84% reduction in data defects.</p>
       </div>
       <div class="card">
+        <div class="metric">+20%</div>
         <h3>Platform Enablement</h3>
         <p class="meta">Unity Catalog · Standards · Mentoring</p>
         <p>Onboarded 5+ squads to Databricks Lakehouse and improved feature delivery speed by approximately 20%.</p>
@@ -184,8 +217,93 @@
     </div>
   </section>
 
+  <!-- Architecture -->
+  <section id="architecture" class="section reveal">
+    <h2><span class="hash">#</span> architecture</h2>
+    <p class="section-intro">How I typically design modern data platforms</p>
+
+    <div class="arch-grid">
+      <div class="arch-card" data-flow>
+        <div class="arch-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <h3>Ingest</h3>
+        <p>High-volume event streams from Kafka / MSK, APIs, and operational databases. Designed for exactly-once semantics and backpressure handling.</p>
+        <div class="arch-tags">Kafka · MSK · Debezium</div>
+        <div class="flow-dots"></div>
+      </div>
+
+      <div class="arch-card" data-flow>
+        <div class="arch-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <h3>Process</h3>
+        <p>Stateful stream processing with Apache Flink and Spark Structured Streaming. Complex event processing, windowing, and real-time enrichment.</p>
+        <div class="arch-tags">Flink · Spark Streaming</div>
+        <div class="flow-dots"></div>
+      </div>
+
+      <div class="arch-card" data-flow>
+        <div class="arch-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3>Lakehouse</h3>
+        <p>Delta Lake as the foundation — ACID, time travel, schema evolution, and SCD. Governed by Unity Catalog for fine-grained access and lineage.</p>
+        <div class="arch-tags">Delta Lake · Unity Catalog</div>
+        <div class="flow-dots"></div>
+      </div>
+
+      <div class="arch-card" data-flow>
+        <div class="arch-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <h3>Trust</h3>
+        <p>Continuous data quality with Databricks DQX, observability, and automated remediation. Metadata-driven frameworks for audit & control.</p>
+        <div class="arch-tags">DQX · Lineage · Observability</div>
+        <div class="flow-dots"></div>
+      </div>
+
+      <div class="arch-card" data-flow>
+        <div class="arch-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2a4 4 0 014 4v2a4 4 0 01-8 0V6a4 4 0 014-4z"/>
+            <path d="M16 14c1.5 0 3 1 3 3v3H5v-3c0-2 1.5-3 3-3"/>
+            <circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/>
+          </svg>
+        </div>
+        <h3>Enable</h3>
+        <p>Self-service via Databricks Genie + semantic layers. AI-assisted pipelines and platform standards that let squads move fast safely.</p>
+        <div class="arch-tags">Genie · Claude Code · Standards</div>
+        <div class="flow-dots"></div>
+      </div>
+
+      <div class="arch-card" data-flow>
+        <div class="arch-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/>
+          </svg>
+        </div>
+        <h3>Optimize</h3>
+        <p>FinOps baked in — intelligent clustering, S3 lifecycle policies, and continuous cost observability without sacrificing performance.</p>
+        <div class="arch-tags">FinOps · Auto-optimize</div>
+        <div class="flow-dots"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Education -->
-  <section id="education" class="section">
+  <section id="education" class="section reveal">
     <h2><span class="hash">#</span> education</h2>
     <div class="edu-grid">
       <div class="edu-card">
@@ -200,7 +318,7 @@
   </section>
 
   <!-- Certifications -->
-  <section class="section">
+  <section class="section reveal">
     <h2><span class="hash">#</span> certifications</h2>
     <div class="certs">
       <span>Databricks Certified Data Engineer Professional</span>
@@ -216,7 +334,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact" class="section reveal">
     <h2><span class="hash">#</span> contact</h2>
     <div class="contact-box">
       <p>📍 Kuala Lumpur, Malaysia</p>
@@ -227,10 +345,11 @@
   </section>
 
   <footer>
-    <p>sohrab@data · Built with care</p>
+    <p>sohrab@data · Built with care · <span id="year"></span></p>
   </footer>
 
-  <!-- Command Palette -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
   <div id="cmd-palette" class="hidden">
     <div class="cmd-box">
       <input type="text" id="cmd-input" placeholder="Type a command or search..." autocomplete="off" />
